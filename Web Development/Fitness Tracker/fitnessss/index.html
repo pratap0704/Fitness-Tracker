@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitTrack - Log Workouts</title>
+  <!-- Include necessary CSS frameworks/libraries -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FitTrack - Log Workouts</h1>
+    <form id="workoutForm">
+      <div class="form-group">
+        <label for="exercise">Exercise:</label>
+        <input type="text" class="form-control" id="exercise" placeholder="Enter exercise name">
+      </div>
+      <div class="form-group">
+        <label for="sets">Sets:</label>
+        <input type="number" class="form-control" id="sets" placeholder="Enter number of sets">
+      </div>
+      <div class="form-group">
+        <label for="reps">Reps:</label>
+        <input type="number" class="form-control" id="reps" placeholder="Enter number of reps">
+      </div>
+      <button type="submit" class="btn btn-primary">Log Workout</button>
+    </form>
+    <hr>
+    <h2>Workout History</h2>
+    <ul id="workoutList"></ul>
+  </div>
+
+  <!-- Include necessary JavaScript frameworks/libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#workoutForm').submit(function(event) {
+        event.preventDefault();
+        var exercise = $('#exercise').val();
+        var sets = $('#sets').val();
+        var reps = $('#reps').val();
+        
+        // Log workout
+        logWorkout(exercise, sets, reps);
+      });
+      
+      // Function to log workout
+      function logWorkout(exercise, sets, reps) {
+        var workout = {
+          exercise: exercise,
+          sets: sets,
+          reps: reps
+        };
+
+     
+        $('#workoutList').append('<li>Exercise: ' + workout.exercise + ', Sets: ' + workout.sets + ', Reps: ' + workout.reps + '</li>');
+
+        
+      }
+    });
+  </script>
+</body>
+</html>

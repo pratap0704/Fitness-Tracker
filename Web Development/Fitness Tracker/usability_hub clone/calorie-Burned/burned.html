@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Burned Calculator</title>
+    <link rel="stylesheet" href="burned.css">
+</head>
+<body>
+    <div id="calculator">
+        <h1>Calorie Burned Calculator</h1>
+
+        <label for="activity">Activity Type:</label>
+        <select id="activity">
+            <option value="running">Running</option>
+            <option value="swimming">Swimming</option>
+            <option value="walking">Walking</option>
+            <option value="stepping">Stepping</option>
+            <option value="skipping">Skipping</option>
+            <option value="gymming">Gymming</option>
+            <option value="sports">Sports</option>
+        </select>
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" min="1" value="1">
+
+        <label for="weight">Weight (kg or lbs):</label>
+        <input type="number" id="weight" min="1" value="1">
+
+        <label for="weight-unit">Weight Unit:</label>
+        <select id="weight-unit">
+            <option value="kg">Kilograms (kg)</option>
+            <option value="lbs">Pounds (lbs)</option>
+        </select>
+
+        <button onclick="calculateCalories()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+    <script src="burned.js"></script>
+</body>
+</html>

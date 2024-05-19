@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline--section: 20px;
+}
+
+body {
+    font-family: 'poopins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+/* p {
+    font-family: "roboto", sans-serif;
+    color: var(--secondary-text-color);
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    margin-top: 45px; 
+}
+*/
+
+#name{
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* utility class */
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline--section);
+}
+
+/* top banner  */
+
+.top-banner {
+    background-color: rgb(230, 88, 88);
+}
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* nav bar  */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.company-logo>img {
+    width: 200px;
+}
+
+.nav-links>ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+/* hearder part */
+
+.hearder-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 118px;
+    padding-top: 20px
+}
+
+.hearder-right img {
+    width: 500px;
+}
+
+.hearder-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.hearder-left span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #183b56;
+    line-height: 26px;
+}
+
+.get-started-btn {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    width: 160px;
+    height: 50px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 7px;
+}
+
+/*  companies section */
+.text-top {
+    margin-top: 30px;
+    color: #183b56;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.companies-name {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+}
+
+.companies-logo {
+    width: 100px;
+    height: 50px;
+}
+
+/* features section */
+
+.features {
+    background-image: url(/background/asset\ 34.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 100%;
+}
+
+.features-hearder>h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #183b56;
+    text-align: center;
+}
+
+.see-all-features-btn {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.see-all-features-btn>a {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.features-hearder>h2 {
+    padding-top: 5em;
+    font-weight: 600;
+}
+
+.see-all-features-btn a {
+    border-radius: 7px;
+    padding: 15px;
+    border: 1px solid blue;
+    color: #183b56;
+}
+
+.learn-more-btn {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 130px;
+}
+
+.features-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+
+}
+
+.features-card {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.features-card img {
+    text-align: center;
+    width: 40px;
+    height: 60px;
+
+}
+
+.feature-card-para {
+    font-size: 18px;
+    margin-top: 20px !important;
+}
+
+/* big-feature-section */
+
+img{
+    border-radius: 20px;
+}
+.big-feature-container{
+    display: flex;
+    padding: 80px 26px 26px 30px;
+    justify-content:center;
+}
+.feature-img> img{
+    width: 34vw;
+}
+.feature-content{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+    padding: 6em 5em;
+}
+h4{
+    font-size: 1.1rem;
+}
+.feature-content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 28px;
+}
+.big-feature-container2{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.example-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.example-heading a{
+    border: 1px solid blue;
+    border-radius: 7px;
+    padding: 1.1em;
+}
+.card-template{
+    height: 300px;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.example-card1{
+    background-image: url("/assets (1)/asset 24.png");
+}
+
+.submit-btn{
+    border: 1px solid rgb(57, 28, 221);
+    border-radius:7px ;
+    padding: 5px 30px;
+    background-color: #eff2f5;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* -------------------------footer part------------------------------------- */
+.footer {
+    background-color: #f0f0f0;
+    padding: 2rem 0;
+    text-align: center;
+    color: #666;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex-basis: 30%;
+    margin: 1rem;
+  }
+  
+  .footer-section h4 {
+    margin-top: 0;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-links li {
+    margin: 0 1rem;
+  }
+  
+  .social-links a {
+    color: #666;
+    transition: color 0.2s ease;
+  }
+  
+  .social-links a:hover {
+    color: #333;
+  }
+  
+  .footer-bottom {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    clear: both;
+  }
+  
+  .footer-bottom p {
+    margin-bottom: 0;
+  }
+  #recepie-section{
+    
+  margin-left: 500px;
+}
+
+#food-recipes{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+#recipes-btn{
+    border: 1.5px solid rgb(156, 171, 206);
+    border-radius: 20px;
+    padding: 7px 15px;
+}

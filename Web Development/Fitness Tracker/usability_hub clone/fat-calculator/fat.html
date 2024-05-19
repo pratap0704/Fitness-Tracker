@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fat Percentage Calculator</title>
+    <link rel="stylesheet" href="fat.css">
+</head>
+<body>
+    <h1>Body Fat Percentage Calculator</h1>
+    <form id="bodyFatForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" required>
+            <br>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" step="0.1" min="1" max="500" required>
+            <select id="weightUnit" name="weightUnit">
+                <option value="kg">Kilograms</option>
+                <option value="lb">Pounds</option>
+            </select>
+            <br>
+            <label for="height">Height:</label>
+            <input type="number" id="height" name="height" step="0.1" min="1" max="300" required>
+            <select id="heightUnit" name="heightUnit">
+                <option value="cm">Centimeters</option>
+                <option value="in">Inches</option>
+            </select>
+            <br>
+            <label for="waist">Waist Circumference:</label>
+            <input type="number" id="waist" name="waist" step="0.1" min="1" max="200" required>
+            <select id="waistUnit" name="waistUnit">
+                <option value="cm">Centimeters</option>
+                <option value="in">Inches</option>
+            </select>
+            <br>
+        </fieldset>
+        <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <div>
+        <p id="para">Here is an image of body fat percentage for the reference</p>
+     <img src="/Fitness Tracker/usability_hub clone/fat-calculator/Body-Fat-percentage-.jpg" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <script src="fat.js"></script>
+</body>
+</html>

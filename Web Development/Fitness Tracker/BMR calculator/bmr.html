@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BMR Calculator</title>
+    <link rel="stylesheet" href="bmr.css" />
+</head>
+<body>
+    <h1 style="text-align:center;">Basal Metabolic Rate Calculator</h1>
+    <fieldset>
+        <div>
+            <ul>
+                <li style="display:inline;"><a href="#">Metric</a></li>
+                <li style="display:inline;"><a href="#">Imperical</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>BMR Metric</h1>
+            <label for="sex">Sex:
+            <select id="sex" name="sex">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select></label><br />
+            <label for="age">Age:
+            <input type="number" id="age" name="age"/></label> <br />
+            <label for="height">Height:
+            <input type="number" id="height" name="height" /></label> <br />
+            <label for="weight">Weight:
+            <input type="number" id="weight" name="weight" />
+            <br />
+
+            <input type="submit" value="Calculate BMR" onclick="calculateBMR()" />
+            <p id="result"></p>
+        </div>
+    </fieldset>
+
+    <script src="bmr.js"></script>
+</body>
+</html>
